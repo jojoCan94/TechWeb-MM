@@ -2,9 +2,9 @@
   <div class="grid place-items-center w-screen h-screen">
     <div class="flex-col place-content-center h-4/5 w-2/5">
       <div class="flex place-content-center text-center">
-        <p class="text-7xl font-semibold">Benvenuto!</p>
+        <p class="text-7xl font-semibold">Admin page</p>
       </div>
-      <div class="space-y-8 flex-col place-content-center bg-gradient-to-r from-green-400 to-blue-500 rounded-2xl">
+      <div class="space-y-8 flex-col place-content-center bg-gradient-to-r from-red-200 to-pink-500 rounded-2xl">
         <div class="pt-10 text-center">
           <p class="text-4xl font-medium">Come ti chiami?</p>
         </div>
