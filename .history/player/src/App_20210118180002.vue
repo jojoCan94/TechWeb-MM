@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="font-avenir font-helvetica font-arial font-sans font-serif text-center text-xl text-bold text-blue-900 ">
-      <router-link class="menuItem-active-link" :to="{name: 'Home'}">Home</router-link> |
+      <router-link to="/">Home</router-link> |
       <router-link to="/archeologia">Archeologia</router-link>
       <router-link to="/about">About</router-link>
     </div>
@@ -46,9 +46,8 @@ export default {
   color: #2c3e50;
 }*/ /*idem.. */
 
-/*Per il momento non funziona :( */
-.router-link-exact-active.menuItem-active-link {
-  border-bottom-color:  #42b983;
+
+#nav a.router-link-exact-active {
   color: #42b983;
 }
 </style>

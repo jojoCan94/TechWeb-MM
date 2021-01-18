@@ -46,7 +46,7 @@ export default {
   color: #2c3e50;
 }*/ /*idem.. */
 
-/*Per il momento non funziona :( */
+
 .router-link-exact-active.menuItem-active-link {
   border-bottom-color:  #42b983;
   color: #42b983;

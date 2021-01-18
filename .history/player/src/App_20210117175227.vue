@@ -1,8 +1,7 @@
 <template>
   <div id="app">
-    <div class="font-avenir font-helvetica font-arial font-sans font-serif text-center text-xl text-bold text-blue-900 ">
-      <router-link class="menuItem-active-link" :to="{name: 'Home'}">Home</router-link> |
-      <router-link to="/archeologia">Archeologia</router-link>
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
     <router-view/>
@@ -30,25 +29,24 @@ export default {
 </script>
 
 <style>
-/*#app {
+#app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-}*/ /*Questo sta tutto nel div usando tailwind*/
+}
 
-/*#nav {
+#nav {
   padding: 30px;
-}*/ 
-/*#nav a {
+}
+
+#nav a {
   font-weight: bold;
   color: #2c3e50;
-}*/ /*idem.. */
+}
 
-/*Per il momento non funziona :( */
-.router-link-exact-active.menuItem-active-link {
-  border-bottom-color:  #42b983;
+#nav a.router-link-exact-active {
   color: #42b983;
 }
 </style>
