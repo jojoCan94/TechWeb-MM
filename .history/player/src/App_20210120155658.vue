@@ -1,0 +1,53 @@
+<template>
+  <div id="app" > 
+    <div class="dark: bg-black font-avenir font-helvetica font-arial font-sans font-serif text-center text-xl text-bold text-blue-900 ">
+      <router-link class="menuItem-active-link" :to="{name: 'Home'}">Home</router-link> |
+      <router-link class="menuItem-active-link" :to="{name: 'Archeologia'}">Archeologia</router-link>
+      <router-link class="menuItem-active-link" :to="{name: 'About'}">About</router-link>
+    </div>
+    <router-view/>
+  </div>
+</template> 
+
+<script>
+export default {
+  name: "App",
+  sockets: {
+    connect() {
+      console.log('socket connected')
+    },
+    userAuth(user) {
+      console.log(user);
+      this.username = user
+    },
+  },
+  data: function() {
+    return {
+    username : "",
+    }
+  },
+};
+</script>
+
+<style>
+/*#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}*/ /*Questo sta tutto nel div usando tailwind*/
+
+/*#nav {
+  padding: 30px;
+}*/ 
+/*#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}*/ /*idem.. */
+
+.router-link-exact-active.menuItem-active-link {
+  border-bottom-color:  #42b983;
+  color: #42b983;
+}
+</style>

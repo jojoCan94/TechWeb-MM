@@ -1,5 +1,5 @@
 <template>
-  <div id="app"> 
+  <div id="app" class="dark"> 
     <div class="bg-gray dark:bg-gray-800 text-center text-xl text-bold text-blue-900 ">
       <router-link class="menuItem-active-link" :to="{name: 'Home'}">Home</router-link> |
       <router-link class="menuItem-active-link" :to="{name: 'Archeologia'}">Archeologia</router-link>
@@ -17,23 +17,10 @@
 </template> 
 
 <script>
+
+
 export default {
   name: "App",
-
-  //Questo script serve a modificare la classe del tag div per poter attivare e disattivare la darkmode
-  mounted(){
-    document.getElementById('switchTheme').addEventListener('click', function() {
-    let divClasses = document.querySelector('div').classList;
-    if(localStorage.theme == 'dark'){
-      divClasses.remove('dark');
-      localStorage.removeItem('theme');
-    }else{
-      divClasses.add('dark');
-      localStorage.theme = 'dark';
-    }
-  });
-
-  },
   sockets: {
     connect() {
       console.log('socket connected')

@@ -20,7 +20,6 @@
 export default {
   name: "App",
 
-  //Questo script serve a modificare la classe del tag div per poter attivare e disattivare la darkmode
   mounted(){
     document.getElementById('switchTheme').addEventListener('click', function() {
     let divClasses = document.querySelector('div').classList;
