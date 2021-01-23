@@ -10,7 +10,9 @@
   "dependencies": {
     "@tailwindcss/postcss7-compat": "^2.0.2",
     "autoprefixer": "^9.8.6",
+    "blueimp-load-image": "^5.14.0",
     "core-js": "^3.6.5",
+    "lodash.sample": "^4.2.1",
     "postcss": "^7.0.35",
     "socket.io-client": "^3.0.5",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
@@ -20,7 +22,7 @@
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-eslint": "^4.5.11",
     "@vue/cli-plugin-router": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "babel-eslint": "^10.1.0",

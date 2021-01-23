@@ -11,8 +11,8 @@
 </template>
 
 <script>
-import Board from '../components/Board'
-import OptionsPane from '../components/OptionPane'
+import Board from "player\src\components\Board.vue"
+import OptionsPane from "player\src\components\OptionPane.vue"
 export default {
   name: 'app',
   components: {
